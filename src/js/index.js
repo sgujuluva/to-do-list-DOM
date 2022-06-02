@@ -48,8 +48,6 @@ let getUserInput = (e) => {
             yettodo.appendChild(clone);
         });
         
-    }else{
-        document.querySelector("#user-input").placeholder ="Please enter an item";
     }
 }
 document.querySelector("form").addEventListener("submit",getUserInput);
