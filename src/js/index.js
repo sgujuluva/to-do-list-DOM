@@ -25,8 +25,8 @@ let getUserInput = (e) => {
         let tickButton = document.createElement("button");
         let notButton = document.createElement("button");
         // add emojis
-        tickButton.innerHTML = "✔️";
-        notButton.innerHTML = "✖️";
+        tickButton.innerHTML = "✅️";
+        notButton.innerHTML = "❌️";
         //append to div
         div.appendChild(tickButton);
         div.appendChild(notButton);
