@@ -1,0 +1,24 @@
+//div -item headings
+
+.item-headings{
+    height:100vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .add{
+        border: 1px solid red;
+        width:20vw;
+        height:100%;
+    }
+    .finished{
+        border: 1px solid red;
+        width:20vw;
+        height:100%; 
+    }
+    .delete{
+        border: 1px solid red;
+        width:20vw;
+        height:100%;
+    }
+}
