@@ -1,6 +1,6 @@
 //select the ol
 let ol = document.querySelector("ol");
-// create an array to push finished items
+// create  push finished items
 let finished = document.querySelector(".finished");
 
 let yettodo = document.querySelector(".yet-to-do");
@@ -35,15 +35,17 @@ let getUserInput = (e) => {
         // remove the item if x is clicked
         tickButton.addEventListener("click",() => {
             newLi.classList.add("done");
+            let clone = newLi.cloneNode(true);
             // set delay time in linethrough and then remove
             //setTimeout(() => (newLi.remove()),1000);           
-            finished.appendChild(newLi);       
+            finished.appendChild(clone);       
             
     });
         
         notButton.addEventListener("click",() => {
             newLi.classList.add("notdone");
-            yettodo.appendChild(newLi);
+            let clone = newLi.cloneNode(true);
+            yettodo.appendChild(clone);
         });
         
     }else{
