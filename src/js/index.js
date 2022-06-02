@@ -1,6 +1,7 @@
 //select the ol
 let ol = document.querySelector("ol");
-
+// create an array to push finished items
+let p = document.querySelector("p");
 //function to create li
 
 let getUserInput = (e) => {
@@ -22,17 +23,21 @@ let getUserInput = (e) => {
         let tickButton = document.createElement("button");
         let notButton = document.createElement("button");
         // add emojis
-        let tick = document.createTextNode("✔️");
-        let notDone = document.createTextNode("✖️");
-        // append button to tickButton
-        tickButton.appendChild(tick);
-        notButton.appendChild(notDone);
+        tickButton.innerHTML = "✔️";
+        notButton.innerHTML = "✖️";
         //append to div
         div.appendChild(tickButton);
         div.appendChild(notButton);
         //append div to li
-        newLi.appendChild(div);
-
+       newLi.appendChild(div);
+        // remove the item if x is clicked
+        tickButton.addEventListener("click",() => {
+            newLi.classList.add("done");
+            newLi.remove();
+            p.innerHTML = newLi;
+    });
+        
+        notButton.addEventListener("click",() => newLi.remove());
     }else{
         document.querySelector("#user-input").placeholder ="Please enter an item";
     }
