@@ -1,9 +1,5 @@
-
-
 //select the ul
 let ul = document.querySelector("ul");
-//add event listener to submit
-let submit = document.querySelector("submit").addEventListener("submit",getUserInput);
 
 //function to create li
 
@@ -17,6 +13,8 @@ let getUserInput = (e) => {
         // text
         let text = document.createTextNode(userInput);
         //append to li
-
+        newLi.appendChild(text);
+        ul.appendChild(newLi)
     }
 }
+document.querySelector("form").addEventListener("submit",getUserInput);
