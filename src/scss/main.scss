@@ -1,4 +1,15 @@
+//click tick and not done
 .done{
     color : green;
     text-decoration: line-through;
+}
+.notdone{
+    color : red;
+}
+
+// button styling
+button{
+    border: none;
+    background-color: transparent;
+    outline:none;
 }

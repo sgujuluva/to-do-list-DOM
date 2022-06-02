@@ -1,7 +1,9 @@
 //select the ol
 let ol = document.querySelector("ol");
 // create an array to push finished items
-let p = document.querySelector("p");
+let finished = document.querySelector(".finished");
+
+let yettodo = document.querySelector(".yet-to-do");
 //function to create li
 
 let getUserInput = (e) => {
@@ -33,11 +35,17 @@ let getUserInput = (e) => {
         // remove the item if x is clicked
         tickButton.addEventListener("click",() => {
             newLi.classList.add("done");
-            newLi.remove();
-            p.innerHTML = newLi;
+            // set delay time in linethrough and then remove
+            //setTimeout(() => (newLi.remove()),1000);           
+            finished.appendChild(newLi);       
+            
     });
         
-        notButton.addEventListener("click",() => newLi.remove());
+        notButton.addEventListener("click",() => {
+            newLi.classList.add("notdone");
+            yettodo.appendChild(newLi);
+        });
+        
     }else{
         document.querySelector("#user-input").placeholder ="Please enter an item";
     }
