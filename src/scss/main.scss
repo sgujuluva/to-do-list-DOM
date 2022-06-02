@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+@import "./abstract/_abstract-dir";
+@import "./layout/_layout-dir";
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding :0;
+}
+//body styling
+body{
+    width:100vw;
+    height:100vh;
+    background-color: $main-background-color;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
 //click tick and not done
 .done{
     color : green;
