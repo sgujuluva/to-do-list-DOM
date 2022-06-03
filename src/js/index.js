@@ -47,6 +47,7 @@ let getUserInput = (e) => {
             newLi.classList.add("notdone");
             let clone = newLi.cloneNode(true);
             yettodo.appendChild(clone);
+            clone.classList.add("notdone-hide")
           
         
         });
