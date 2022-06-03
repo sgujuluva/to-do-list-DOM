@@ -3,6 +3,14 @@
     color : green;
     text-decoration: line-through;
 }
+.done-hide{
+    color : green;
+    text-decoration: line-through;
+    button{
+        display :none;
+    }
+} 
+
 .notdone{
     color : red;
 }

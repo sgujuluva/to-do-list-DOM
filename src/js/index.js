@@ -38,7 +38,8 @@ let getUserInput = (e) => {
             let clone = newLi.cloneNode(true);
             // set delay time in linethrough and then remove
             //setTimeout(() => (newLi.remove()),1000);           
-            finished.appendChild(clone);       
+            finished.appendChild(clone); 
+            clone.classList.add("done-hide");      
             
     });
         
