@@ -2,10 +2,13 @@
 .done{
     color : green;
     text-decoration: line-through;
+    .button{
+        text-decoration: none;
+    }
 }
 .done-hide{
     color : green;
-    text-decoration: line-through;
+    text-decoration: none;
     button{
         display :none;
     }
@@ -16,6 +19,7 @@
 }
 .notdone-hide{
     color : red;
+    text-decoration: none;
     button{
         display:none;
     }
