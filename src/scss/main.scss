@@ -30,24 +30,28 @@ body{
         }
         form{
             display:flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
+            height:30%;
             input[type="text"]{  
-                width:30%;       
+                width:60%;       
                 padding : 0.8rem;
                 border : none;
                 border-radius:10px;
-                background-color:$dark-brown-color;
-                
+                background-color:$light-brown-shade;
+                font-size: x-large;
+                font-weight: 800;
+                font-style: italic;
             }
             input[type="submit"]{
                 background-color: $greenish-brown;
                 padding :0.6rem;
-                width : 10%;
+                width : 20%;
                 border-radius: 20px;
                 border:none;
                 cursor :pointer;
                 font-weight: 700;
+                font-size: x-large;
                 font-style: oblique;
         
             }
