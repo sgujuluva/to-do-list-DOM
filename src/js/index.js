@@ -34,12 +34,13 @@ let getUserInput = (e) => {
        newLi.appendChild(div);
         // remove the item if x is clicked
         tickButton.addEventListener("click",() => {
-            newLi.classList.add("done");
+            //newLi.classList.add("done");
             let clone = newLi.cloneNode(true);
             // set delay time in linethrough and then remove
             //setTimeout(() => (newLi.remove()),1000);           
             finished.appendChild(clone); 
-            clone.classList.add("done-hide");      
+            clone.classList.add("done-hide"); 
+            newLi.classList.add("done");     
             
     });
         

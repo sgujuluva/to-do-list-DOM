@@ -1,9 +1,17 @@
 //click tick and not done
-/* .done{
-    button{
-        text-decoration:dotted;
+ .done{    
+        text-decoration:line-through;
+        border: 1px solid red; 
+ 
+    div{
+        border: 1px solid blue;
+        button{
+           border: 1px solid red;
+            text-decoration:none;
+        }
+    
     }
-} */
+} 
 
 .done-hide{
     color : green;
