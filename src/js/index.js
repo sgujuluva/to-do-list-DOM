@@ -31,8 +31,8 @@ let getUserInput = (e) => {
         div.appendChild(tickButton);
         div.appendChild(notButton);
         //append div to li
-       newLi.appendChild(div);
-        // remove the item if x is clicked
+       /* newLi */ol.appendChild(div);
+          // remove the item if x is clicked
         tickButton.addEventListener("click",() => {
             //newLi.classList.add("done");
             let clone = newLi.cloneNode(true);
