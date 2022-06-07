@@ -16,41 +16,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h3 {
       text-align: center;
       font-size: x-large;
       font-style: italic;
+      margin-bottom: 0.5rem;
     }
-    ol{
+    ol {
       font-size: x-large;
-      line-height: 2rem;
+      line-height: 3rem;
       font-weight: 800;
     }
-    
   }
 }
 
 .add {
   background-color: $light-brown-shade;
 
-
   ol {
     width: 100%;
-   border:2px solid red;
+
     display: flex;
     flex-direction: column;
 
     li {
       display: flex;
-      border:2px solid blue;
-      width: 60%;
+
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
     }
     div {
       width: 40%;
+
       button {
         font-size: x-large;
-      &:nth-child(2) {
-          padding: 0.8rem;
+        &:nth-child(1) {
+          margin: 0.8rem;
         }
       }
     }
@@ -58,7 +61,6 @@
 }
 .finished-item {
   background-color: $dark-brown-color;
- 
 }
 .delete {
   background-color: $yellowish-brown;
