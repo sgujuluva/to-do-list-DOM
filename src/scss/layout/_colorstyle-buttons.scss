@@ -1,39 +1,36 @@
 //click tick and not done
- .done{    
-        text-decoration:line-through;
-        //border: 1px solid red; 
- 
-    div{
-      //  border: 1px solid blue;
-        button{
-           text-decoration:none;
-        }
-    
-    }
-} 
+.done {
+  text-decoration: line-through;
 
-.done-hide{
-    color : green;
-    text-decoration: none;
-    button{
-        display :none;
+  div {
+    button {
+      text-decoration: none;
     }
-} 
+  }
+}
+
+.done-hide {
+  color: green;
+  text-decoration: none;
+  button {
+    display: none;
+  }
+}
 
 /* .notdone{
 
 } */
-.notdone-hide{
-    color : red;
-    text-decoration: none;
-    button{
-        display:none;
-    }
+.notdone-hide {
+  color: red;
+  text-decoration: none;
+  button {
+    display: none;
+  }
 }
 
 // button styling
-button{
-    border: none;
-    background-color: transparent;
-    outline:none;
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
 }

@@ -10,11 +10,9 @@
   .add,
   .finished-item,
   .delete {
-    // border: 1px solid red;
     padding: 1.2rem;
     width: 20vw;
     height: 100%;
-    //border:2px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,54 +21,35 @@
       font-size: x-large;
       font-style: italic;
     }
-    ol {
-      line-height: 3rem;
-      //  border:2px solid orchid;
-      li {
-        //  border:2px solid red;
-        //width:50%;// check --------newly added
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: x-large;
-        font-weight: 800;
-        div {
-          //  border:2px solid blue;
-          width: 50%;
-          display: flex;
-          justify-content: space-around;
-          button {
-            &:nth-child(1) {
-              font-size: x-large;
-            }
-            &:nth-child(2) {
-              font-size: x-large;
-            }
-          }
-        }
-      }
+    ol{
+      font-size: x-large;
+      line-height: 2rem;
+      font-weight: 800;
     }
+    
   }
 }
 
 .add {
   background-color: $light-brown-shade;
 
+
   ol {
     width: 100%;
-    //newly styled on jun7
+   border:2px solid red;
     display: flex;
+    flex-direction: column;
 
     li {
       display: flex;
-      width: 70%;
+      border:2px solid blue;
+      width: 60%;
     }
     div {
       width: 40%;
       button {
         font-size: x-large;
-        justify-content: space-between;
-        &:nth-child(2) {
+      &:nth-child(2) {
           padding: 0.8rem;
         }
       }
@@ -79,6 +58,7 @@
 }
 .finished-item {
   background-color: $dark-brown-color;
+ 
 }
 .delete {
   background-color: $yellowish-brown;
