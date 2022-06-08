@@ -23,33 +23,31 @@
       font-style: italic;
       margin-bottom: 0.5rem;
     }
-    ol {
+    ul {
       font-size: x-large;
-      line-height: 3rem;
+       line-height: 3rem;
       font-weight: 800;
-    }
+      list-style: decimal;
+          }
   }
 }
 
 .add {
   background-color: $light-brown-shade;
 
-  ol {
+  ul {
     width: 100%;
-
-    display: flex;
+    display: flex; 
     flex-direction: column;
 
-    li {
-      display: flex;
-
+    li {      
       width: 100%;
+         display: flex;  
       justify-content: space-around;
       align-items: center;
     }
     div {
       width: 40%;
-
       button {
         font-size: x-large;
         &:nth-child(1) {

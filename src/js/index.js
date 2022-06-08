@@ -1,5 +1,5 @@
 //select the ol
-let ol = document.querySelector("ol");
+let ul = document.querySelector("ul");
 // create  push finished items
 let finished = document.querySelector(".finished");
 
@@ -17,7 +17,7 @@ let getUserInput = (e) => {
         let text = document.createTextNode(userInput);
         //append to li
         newLi.appendChild(text);
-        ol.appendChild(newLi);
+        ul.appendChild(newLi);
         document.querySelector("#user-input").value = "";
         // create a div for buttons
         let div = document.createElement("div");
@@ -46,7 +46,7 @@ let getUserInput = (e) => {
         
         notButton.addEventListener("click",() => {
             newLi.classList.add("notdone");
-            let clone = newLi.cloneNode(true);
+           let clone = newLi.cloneNode(true);        
             yettodo.appendChild(clone);
             clone.classList.add("notdone-hide")
           
