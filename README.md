@@ -1,6 +1,6 @@
 ## To Do List using DOM
 
-**[ https://sgujuluva.github.io/to-do-list-DOM/](github.io)**
+**[todolist app ](https://sgujuluva.github.io/to-do-list-DOM/)**
 
 ---
 
