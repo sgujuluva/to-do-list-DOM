@@ -30,6 +30,7 @@ let getUserInput = (e) => {
            
             finished.appendChild(li);
             listDiv.remove(btnDiv);
+            finished.classList.add("done-hide");
            
         });
 
@@ -37,6 +38,7 @@ let getUserInput = (e) => {
         xBtn.addEventListener("click", () => {
             deleted.appendChild(li);
             listDiv.remove(btnDiv);
+            deleted.classList.add("notdone-hide");
         })
     }
 
