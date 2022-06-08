@@ -1,59 +1,32 @@
-//select the ol
-let ul = document.querySelector("ul");
-// create  push finished items
+let ul = document.querySelector(".add-item");
 let finished = document.querySelector(".finished");
-
-let yettodo = document.querySelector(".yet-to-do");
-//function to create li
-
+let deleted = document.querySelector(".yet-to-do");
+// to get the input from user
 let getUserInput = (e) => {
     e.preventDefault();
-    // getting the value from the user and declaring to the variable
     let userInput = document.querySelector("#user-input").value;
     if(!userInput == ""){
-        // create li
-        let newLi = document.createElement("li");
-        // text
+        //main div for list text + button
+        let listDiv = document.createElement("div");
+        let li = document.createElement("li");
         let text = document.createTextNode(userInput);
-        //append to li
-        newLi.appendChild(text);
-        ul.appendChild(newLi);
+        li.appendChild(text);
+        listDiv.appendChild(li);
+        ul.appendChild(listDiv)
         document.querySelector("#user-input").value = "";
-        // create a div for buttons
-        let div = document.createElement("div");
-        //create button
-        let tickButton = document.createElement("button");
-        let notButton = document.createElement("button");
-        // add emojis
-        tickButton.innerHTML = "✅️";
-        notButton.innerHTML = "❌️";
-        //append to div
-        div.appendChild(tickButton);
-        div.appendChild(notButton);
-        //append div to li
-       newLi /* ol */.appendChild(div);
-          // remove the item if x is clicked
-        tickButton.addEventListener("click",() => {
-            //newLi.classList.add("done");
-            let clone = newLi.cloneNode(true);
-            // set delay time in linethrough and then remove
-            //setTimeout(() => (newLi.remove()),1000);           
-            finished.appendChild(clone); 
-            clone.classList.add("done-hide"); 
-            newLi.classList.add("done");     
-            
-    });
-        
-        notButton.addEventListener("click",() => {
-            newLi.classList.add("notdone");
-           let clone = newLi.cloneNode(true);        
-            yettodo.appendChild(clone);
-            clone.classList.add("notdone-hide")
-          
-        
-        });
-        
+        //div for button
+         let btnDiv = document.createElement("div");
+         let tickBtn = document.createElement("btnDiv");
+        let xBtn =document.createElement("btnDiv");
+        tickBtn.innerHTML = "✅️";
+        xBtn.innerHTML = "❌️";
+       btnDiv.appendChild(tickBtn);
+       btnDiv.appendChild(xBtn);
+       //append this btnDiv to main Div
+       listDiv.appendChild(btnDiv);  
+
     }
 }
 document.querySelector("form").addEventListener("submit",getUserInput);
-/* ✔️✖️ */
+
+
