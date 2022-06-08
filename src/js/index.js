@@ -25,7 +25,21 @@ let getUserInput = (e) => {
        //append this btnDiv to main Div
        listDiv.appendChild(btnDiv);  
 
+// event listener tickbutton
+        tickBtn.addEventListener("click", () => {
+           
+            finished.appendChild(li);
+            listDiv.remove(btnDiv);
+           
+        });
+
+    // event listener xbutton
+        xBtn.addEventListener("click", () => {
+            deleted.appendChild(li);
+            listDiv.remove(btnDiv);
+        })
     }
+
 }
 document.querySelector("form").addEventListener("submit",getUserInput);
 
