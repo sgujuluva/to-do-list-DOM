@@ -10,6 +10,7 @@
   .add,
   .finished-item,
   .delete {
+    border : 2px solid red;
     padding: 1.2rem;
     width: 20vw;
     height: 100%;
@@ -24,6 +25,7 @@
       margin-bottom: 0.5rem;
     }
     ul {
+      
       font-size: x-large;
        line-height: 3rem;
       font-weight: 800;
@@ -36,26 +38,22 @@
   background-color: $light-brown-shade;
 
   ul {
-    width: 100%;
-    display: flex; 
-    flex-direction: column;
-
-    li {      
-      width: 100%;
-         display: flex;  
+    width :80%;
+    //border : 2px solid blue;
+    div{
+     
+      //border:2px solid brown;
+      display:flex;
       justify-content: space-around;
       align-items: center;
-    }
-    div {
-      width: 40%;
-      button {
-        font-size: x-large;
-        &:nth-child(1) {
-          margin: 0.8rem;
-        }
+      btnDiv{
+       // border:2px solid orange;
+       margin :0 0.5rem;
       }
-    }
+    } 
+       
   }
+ 
 }
 .finished-item {
   background-color: $dark-brown-color;
