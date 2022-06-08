@@ -25,11 +25,20 @@
       margin-bottom: 0.5rem;
     }
     ul {
-      
+    
       font-size: x-large;
        line-height: 3rem;
       font-weight: 800;
       list-style: decimal;
+      li{
+        display:flex;
+        justify-content: center;
+        width:15vw;
+        height:3rem;
+        margin : 1rem;
+        background-color:$coffee-brown-color;
+        border-radius: 20px;
+      }
           }
   }
 }
@@ -40,8 +49,11 @@
   ul {
     width :80%;
     //border : 2px solid blue;
-    div{
-     
+    section{  
+      background-color:$coffee-brown-color;  
+      border-radius: 20px; 
+      height:3rem;
+      margin:0.5rem 0;
       //border:2px solid brown;
       display:flex;
       justify-content: space-around;
@@ -51,12 +63,13 @@
        margin :0 0.5rem;
       }
     } 
-       
+           
   }
  
 }
 .finished-item {
   background-color: $dark-brown-color;
+ 
 }
 .delete {
   background-color: $yellowish-brown;

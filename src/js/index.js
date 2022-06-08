@@ -7,7 +7,7 @@ let getUserInput = (e) => {
     let userInput = document.querySelector("#user-input").value;
     if(!userInput == ""){
         //main div for list text + button
-        let listDiv = document.createElement("div");
+        let listDiv = document.createElement("section");
         let li = document.createElement("li");
         let text = document.createTextNode(userInput);
         li.appendChild(text);
