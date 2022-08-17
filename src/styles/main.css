@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+h1, form {
+  background-color: #E3C2A6;
+}
+
+.item-headings {
+  background-color: #FDCEB8;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-headings .add,
+.item-headings .finished-item,
+.item-headings .delete {
+  padding: 1.2rem;
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-headings .add h3,
+.item-headings .finished-item h3,
+.item-headings .delete h3 {
+  text-align: center;
+  font-size: x-large;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.item-headings .add ul,
+.item-headings .finished-item ul,
+.item-headings .delete ul {
+  font-size: x-large;
+  line-height: 3rem;
+  font-weight: 800;
+  list-style: decimal;
+}
+.item-headings .add ul li,
+.item-headings .finished-item ul li,
+.item-headings .delete ul li {
+  display: flex;
+  justify-content: center;
+  width: 15vw;
+  height: 3rem;
+  margin: 1rem;
+  background-color: #E3C2A6;
+  border-radius: 20px;
+}
+
+.add {
+  background-color: #FAE4C4;
+}
+.add ul {
+  width: 80%;
+}
+.add ul section {
+  background-color: #E3C2A6;
+  border-radius: 20px;
+  height: 3rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.add ul section btnDiv {
+  margin: 0 0.5rem;
+}
+
+.finished-item {
+  background-color: #FDCEB8;
+}
+
+.delete {
+  background-color: #FDEFB8;
+}
+
+.done {
+  text-decoration: line-through;
+}
+.done div button {
+  text-decoration: none;
+}
+
+.done-hide {
+  color: green;
+  text-decoration: none;
+}
+.done-hide button {
+  display: none;
+}
+
+/* .notdone{
+
+} */
+.notdone-hide {
+  color: red;
+  text-decoration: none;
+}
+.notdone-hide button {
+  display: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .main {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #E3C2A6;
+}
+body .main h1 {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+}
+body .main form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+}
+body .main form input[type=text] {
+  width: 60%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #FAE4C4;
+  font-size: x-large;
+  font-weight: 800;
+  font-style: italic;
+}
+body .main form input[type=submit] {
+  background-color: #E3D1A6;
+  padding: 0.6rem;
+  width: 20%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: x-large;
+  font-style: oblique;
+}
+
+/*# sourceMappingURL=main.css.map */
