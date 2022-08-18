@@ -29,43 +29,36 @@ h1, form {
   font-style: italic;
   margin-bottom: 0.5rem;
 }
-.item-headings .add ul,
-.item-headings .finished-item ul,
-.item-headings .delete ul {
+.item-headings .add ol,
+.item-headings .finished-item ol,
+.item-headings .delete ol {
   font-size: x-large;
   line-height: 3rem;
   font-weight: 800;
-  list-style: decimal;
-}
-.item-headings .add ul li,
-.item-headings .finished-item ul li,
-.item-headings .delete ul li {
-  display: flex;
-  justify-content: center;
-  width: 15vw;
-  height: 3rem;
-  margin: 1rem;
-  background-color: #E3C2A6;
-  border-radius: 20px;
 }
 
 .add {
   background-color: #FAE4C4;
 }
-.add ul {
-  width: 80%;
-}
-.add ul section {
-  background-color: #E3C2A6;
-  border-radius: 20px;
-  height: 3rem;
-  margin: 0.5rem 0;
+.add ol {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+}
+.add ol li {
+  display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
 }
-.add ul section btnDiv {
-  margin: 0 0.5rem;
+.add ol div {
+  width: 40%;
+}
+.add ol div button {
+  font-size: x-large;
+}
+.add ol div button:nth-child(1) {
+  margin: 0.8rem;
 }
 
 .finished-item {
