@@ -1,3 +1,5 @@
-dist/
-node_modules/
 
+# Dependency dir
+node_modules/
+# VS code config
+.vscode/ 
